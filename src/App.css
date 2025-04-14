@@ -1,0 +1,28 @@
+.body {
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.main-bg{
+  background-color: rgb(109, 90, 90);
+  height: 100vh;
+  width: 100vw;
+  background-size : cover;
+  padding-top: 75px;
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+ 
+
+}
+
