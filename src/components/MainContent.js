@@ -33,7 +33,7 @@ function MainContent() {
                 <p>Here you can add more detailed information about your topic.</p>
             </section>
             <section>
-                <h2>Another Section</h2>
+                <h2>career</h2>
                 <p>Feel free to add more sections as needed.</p>
             </section>
         </main>
