@@ -5,7 +5,7 @@ function MainContent() {
     return (
         <main className="main-content">
 
-            
+      <div class="main">   
 <div class="hero-basic">
   <div class="text-content-title">
     <div style={{color:"#4d4d4d"}} className='title'  >
@@ -22,10 +22,10 @@ function MainContent() {
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
   <path d="M12 22M12 22L6 16M12 22L18 16" stroke="#b5b5b5" stroke-width="2" fill="none" className='color-animation'/>
 </svg>
-
+</div>   
             <section>
 
-                <h2>사진</h2> 
+                사진
                 <h2>강찬우</h2>
                 <h2>1998.08.17</h2>
 

@@ -8,7 +8,9 @@
 }
 
 
-
+.main{
+  padding-bottom:5rem;
+}
 
 .header{
   position: fixed;
@@ -25,11 +27,12 @@
   box-sizing: border-box;
 }
 .hero-basic {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0px;
   justify-content: flex-end;
-  height: 90vh;
+  height: 85vh;
   position: relative;
 }
 .text-content-title {
@@ -46,7 +49,7 @@
   color: var(--var-sds-color-text-default-default, #e8e8e8);
   text-align: left;
   font-family: var(--title-hero-font-family, "Inter-Bold", sans-serif);
-  font-size: var(--title-hero-font-size, 72px);
+  font-size: var(--title-hero-font-size, 5em);
   line-height: var(--title-hero-line-height, 120%);
   letter-spacing: var(--title-hero-letter-spacing, -0.03em);
   font-weight: var(--title-hero-font-weight, 700);
