@@ -26,6 +26,7 @@ function MainContent() {
 </section>   
             <section className='about'>
               <div className=''>
+                <h1>ABOUT</h1>
             <div className='aboutMe'>
       <img src="https://i.ibb.co/JwjsYPTY/fotor-20250506143351.png" alt="" className='face'/>
                 <div className='me'>
@@ -40,7 +41,8 @@ function MainContent() {
                 2023.09 ~ 2024.03 SOLDESK(강남) k-digital training<br/>
                 2017.03 ~ 2023.02 극동대학교 반도체장비공학과 졸업 학점 3.85/4.5
                  <HorizonLine/>
-                <h1>Technology Stack</h1> <br/><br/>
+                 <div className='aa'>
+                <h1>TECHNOLOGY STACK</h1> <br/><br/>
                 <h5>Experienced</h5><br/>
                 
                 <div className='techstack'>
@@ -117,6 +119,7 @@ function MainContent() {
                     Node.js
                   </div>  
                 </div>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" className='nexticon'>
                 <path d="M12 22M12 22L6 16M12 22L18 16" stroke="#b5b5b5" stroke-width="2" fill="none" className='color-animation'/>
                 </svg>
@@ -127,11 +130,14 @@ function MainContent() {
 
 
             <section>
-                <h2>career</h2>
+                <h1>PROJECT</h1>
                 <p>Feel free to add more sections as needed.</p>
             </section>
         </main>
     );
 };
+
+const
+
 
 export default MainContent;
