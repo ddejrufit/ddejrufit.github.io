@@ -2,16 +2,22 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Navigation() {         
+
+
+
+
+function Navigation({scrollToHome, scrollToAbout, scrollToProject}) {         
+
+
     return(
       <div className='header'>
       <Navbar bg="light" data-bs-theme="light" >
       <Container>
         <Navbar.Brand href="#home" >KCW</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">   Home</Nav.Link>
-          <Nav.Link href="#About">   About</Nav.Link>
-          <Nav.Link href="#Project">   Project</Nav.Link>
+          <Nav.Link onClick={scrollToHome}>   Home</Nav.Link>
+          <Nav.Link onClick={scrollToAbout}>   About</Nav.Link>
+          <Nav.Link onClick={scrollToProject}>   Project</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

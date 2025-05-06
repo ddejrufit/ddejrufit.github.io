@@ -1,12 +1,12 @@
-import React from 'react';
 import './MainContent.css';
 import HorizonLine from './HorizonLine';
 
-function MainContent() {         
+function MainContent({homeRef,aboutRef,projectRef}) {         
     return (
-        <main className="main-content">
-
-      <section className="main section">   
+        <main className="main-content"ref={homeRef}>
+          
+      <section className="main section" >   
+      
 <div className="hero-basic">
   <div className="text-content-title">
     <div style={{color:"#4d4d4d"}} className='title'  >
@@ -24,7 +24,8 @@ function MainContent() {
   <path d="M12 22M12 22L6 16M12 22L18 16" stroke="#b5b5b5" stroke-width="2" fill="none" className='color-animation'/>
 </svg>
 </section>   
-            <section className='about'>
+
+            <section className='about'ref={aboutRef}>
               <div className=''>
                 <h1>ABOUT</h1>
             <div className='aboutMe'>
@@ -129,7 +130,7 @@ function MainContent() {
 
 
 
-            <section>
+            <section ref={projectRef}>
                 <h1>PROJECT</h1>
                 <div>
                   <img></img>

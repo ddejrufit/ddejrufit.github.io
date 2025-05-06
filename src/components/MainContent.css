@@ -1,9 +1,9 @@
 .main-content {
-    margin-top: 55px;
     padding: 20px;
     background-color: #000000;
     color: #ffffff;
 }
+
 
 .main-content h1 {
     font-size: 2em;
@@ -12,6 +12,9 @@
 
 .main-content section {
     margin-bottom: 20px;
+    scroll-margin-top: 55px;
+    margin-top: 55px;
+
 }
 
 .main-content h2 {
