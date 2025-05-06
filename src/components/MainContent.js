@@ -131,13 +131,15 @@ function MainContent() {
 
             <section>
                 <h1>PROJECT</h1>
-                <p>Feel free to add more sections as needed.</p>
+                <div>
+                  <img></img>
+                  <h4></h4>
+                </div>
             </section>
         </main>
     );
 };
 
-const
 
 
 export default MainContent;
