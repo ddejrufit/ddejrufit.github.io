@@ -1,3 +1,4 @@
+
 .body {
   font-family: Arial, sans-serif;
   overflow-x: hidden; 
@@ -18,6 +19,11 @@
   box-sizing: border-box;
 }
 
+.aboutMe {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .header {
   position: fixed;
@@ -81,14 +87,44 @@ svg {
   margin-bottom: 25px;
 }
 
+.about{
+  height: 100vh;
+}
+
 
 .aboutMe{
   display: flex;
   align-items: center;
 }
+hr {
+  border: solid 10px white;
+}
+.stack{
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  width: fit-content;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+
+  svg{
+    height: 32px;
+    width: 50px;
+    
+  }
+}
+
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
 .me {
-  display: flex
-;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30px;
@@ -115,13 +151,11 @@ svg {
   }
 
 
-  svg {
+  .nexticon {
     width: 45px;
     height: 45px;
   }
-   /* svg + * {
-       margin-top: 2rem;
-   } */
+
 }
 
 @media (max-width: 767px) {
@@ -132,17 +166,17 @@ svg {
   }
 
   .text-content-title {
-     margin-bottom: 1.5rem; /* 제목과 SVG 사이 간격 */
+     margin-bottom: 1.5rem; 
   }
 
   .text-content-title .title {
-    font-size: 2.5em; /* 모바일 제목 크기 */
+    font-size: 2.5em; 
     line-height: 1.3;
     letter-spacing: normal;
   }
 
 
-  svg {
+  .nexticon {
     width: 40px;
     height: 40px;
   }
