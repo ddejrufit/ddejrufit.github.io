@@ -5,13 +5,13 @@ function MainContent() {
     return (
         <main className="main-content">
 
-      <div class="main">   
-<div class="hero-basic">
-  <div class="text-content-title">
+      <div className="main">   
+<div className="hero-basic">
+  <div className="text-content-title">
     <div style={{color:"#4d4d4d"}} className='title'  >
     Frontend
     </div>
-    <div class="title">
+    <div className="title">
       KCW
       <br />
       PORTFOLIO
@@ -19,18 +19,21 @@ function MainContent() {
   </div>
 </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
   <path d="M12 22M12 22L6 16M12 22L18 16" stroke="#b5b5b5" stroke-width="2" fill="none" className='color-animation'/>
 </svg>
 </div>   
-            <section>
+            <section className='aboutMe'>
 
-                사진
-                <h2>강찬우</h2>
+           
+      <img src="https://i.ibb.co/JwjsYPTY/fotor-20250506143351.png" alt="" className='face'/>
+                <div className='me'>
+                <h1>강찬우</h1>
                 <h2>1998.08.17</h2>
 
 
-                <p>Here you can add more detailed information about your topic.</p>
+                <p>신입 프론트 엔드 개발자 강찬우 입니다.<br/>계속 성장하는 개발자가 되고 싶습니다.</p>
+                </div>
             </section>
             <section>
                 <h2>career</h2>
