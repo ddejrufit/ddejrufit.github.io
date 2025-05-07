@@ -25,9 +25,12 @@
 }
 
 .aboutMe {
-  height: 100%;
+  display: flex;
+  align-items: center;
   width: 100%;
   box-sizing: border-box;
+  padding: 30px 0;
+  justify-content: center;
 }
 
 .header {
@@ -46,7 +49,7 @@ section{
 .hero-basic * {
   box-sizing: border-box;
 }
-/* 1024px */
+
 .hero-basic {
   padding: 2rem;
   display: flex;
@@ -90,7 +93,9 @@ svg {
 .face{
   width: 165px;
   height: 165px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
+  margin-right: 30px; 
+  object-fit: cover;
 }
 
 
@@ -99,7 +104,12 @@ svg {
 .aboutMe{
   display: flex;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 0;
+  justify-content: center;
 }
+
 hr {
   border: solid 10px white;
 }
@@ -126,18 +136,28 @@ hr {
   justify-content: center;
   margin-bottom: 70px;
 }
-.aa{
-  margin-bottom: 180px;
-}
+
 
 
 .me {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 30px;
+  text-align: left;
 }
 
+.me h1, .me h2, .me p {
+  margin: 5px 0; 
+}
+.me h1 { font-size: 2em; } 
+.me h2 { font-size: 1.2em; color: #ccc; }
+.me p { font-size: 1em; line-height: 1.5; }
+
+.about{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  scroll-margin-top: 55px;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-basic {
@@ -164,8 +184,6 @@ hr {
     height: 45px;
   }
 
-
-
   .stack {
     font-size: 18px; 
     padding: 8px;
@@ -181,6 +199,32 @@ hr {
     margin-bottom: 50px; 
     padding: 0 15px; 
   }
+
+  .aboutMe {
+    /* 기본 가로 배치 유지 */
+    padding: 25px 0; /* 태블릿 aboutMe 패딩 조절 */
+  }
+
+  .face {
+    width: 140px; /* 태블릿에서 얼굴 이미지 크기 살짝 줄임 */
+    height: 140px;
+    margin-right: 25px; /* 태블릿에서 간격 조절 */
+  }
+
+  .me {
+    /* 기본 왼쪽 정렬 유지 */
+    text-align: left; /* 왼쪽 정렬 유지 */
+  }
+  .me h1 { font-size: 1.8em; } /* 태블릿 제목 크기 조절 */
+  .me h2 { font-size: 1.1em; } /* 태블릿 날짜 크기 조절 */
+  .me p { font-size: 0.95em; } /* 태블릿 소개글 크기 조절 */
+
+  .about {
+     padding-bottom: 40px; /* 태블릿 섹션 하단 패딩 조절 */
+     padding-top: 40px; /* 태블릿 섹션 상단 패딩 조절 */
+     scroll-margin-top: 55px; /* 스크롤 마진 유지 */
+  }
+
 
 
 
@@ -229,7 +273,47 @@ hr {
   }
 
 
+  .aboutMe {
+    flex-direction: column; /* 모바일: 세로 배치 */
+    align-items: center; /* 모바일: 중앙 정렬 */
+    padding: 20px 0; /* 모바일 aboutMe 패딩 조절 */
+  }
 
+  .face {
+    width: 120px; /* 모바일에서 얼굴 이미지 크기 줄임 */
+    height: 120px;
+    margin-bottom: 15px; /* 모바일: me div와 얼굴 이미지 사이 간격 (세로 배치이므로 margin-right 대신 margin-bottom 사용) */
+    margin-right: 0; /* 모바일: 가로 배치 마진 제거 */
+  }
+
+  .me {
+    align-items: center; /* 모바일: 중앙 정렬 */
+    margin-left: 0; /* 모바일: 왼쪽 마진 제거 */
+    padding: 0 15px; /* 모바일: 좌우 패딩 추가 (내용이 너무 좌우에 붙지 않도록) */
+    text-align: center; /* 모바일: 텍스트 중앙 정렬 */
+  }
+   .me h1 { font-size: 1.5em; } /* 모바일 제목 크기 조절 */
+   .me h2 { font-size: 1em; } /* 모바일 날짜 크기 조절 */
+   .me p { font-size: 0.9em; } /* 모바일 소개글 크기 조절 */
+
+
+   .about {
+     /* height: auto; <-- 기존 코드 유지 */
+     min-height: 80vh; /* <-- 기존 코드 유지 */
+     padding-bottom: 30px; /* 모바일 섹션 하단 패딩 조절 */
+     padding-top: 30px; /* 모바일 섹션 상단 패딩 조절 */
+     scroll-margin-top: 55px; /* 스크롤 마진 유지 */
+   }
+
+  /* ... (기술 스택 관련 모바일 스타일) ... */
+
+  /* HR 스타일 (모바일에서 중앙 정렬 및 너비 조절) */
+  hr {
+    margin: 20px auto; /* 상하 20px 마진, 좌우 auto로 중앙 정렬 */
+    width: 80%; /* 너비 80% (예시) */
+    border: none; /* 기본 border 제거 */
+    border-top: 1px solid white; /* 얇은 흰색 라인 (예시) */
+  }
 
 }
 
@@ -270,17 +354,51 @@ hr {
    .face {
       width: 100px; 
       height: 100px;
-      margin-bottom: 10px; 
+      margin-right: 30px;
+      object-fit: cover;
    }
+
   .me {
-     padding: 0 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5px; 
+    text-align: left;
   }
-  .about {
-      min-height: 60vh; 
-      padding-bottom: 20px;
-  }
+
+
   hr {
       margin: 15px auto; 
       width: 60%; 
   }
+
+  .aboutMe {
+    padding: 15px 0; /* 더 작은 화면 aboutMe 패딩 조절 */
+}
+.face {
+    width: 100px; /* 더 작은 화면에서 얼굴 이미지 크기 줄임 (요청하신 크기) */
+    height: 100px; /* 더 작은 화면에서 얼굴 이미지 크기 줄임 (요청하신 크기) */
+    margin-bottom: 10px; /* 더 작은 화면에서 간격 줄임 (요청하신 간격) */
+}
+.me {
+   padding: 0 10px; /* 더 작은 화면 좌우 패딩 조절 */
+}
+.me h1 { font-size: 1.3em; } /* 더 작은 화면 제목 크기 조절 */
+.me h2 { font-size: 0.9em; } /* 더 작은 화면 날짜 크기 조절 */
+.me p { font-size: 0.85em; } /* 더 작은 화면 소개글 크기 조절 */
+
+
+ .about {
+    min-height: 60vh; /* <-- 기존 코드 유지 (요청하신 최소 높이) */
+    padding-bottom: 20px; /* 더 작은 화면 섹션 하단 패딩 조절 (요청하신 패딩) */
+    padding-top: 20px; /* 더 작은 화면 섹션 상단 패딩 조절 */
+    scroll-margin-top: 55px; /* 스크롤 마진 유지 */
+}
+
+ /* HR 스타일 (더 작은 화면 조정) */
+hr {
+    margin: 15px auto; /* 상하 15px 마진, 좌우 auto */
+    width: 70%; /* 너비 조절 (예시) */
+}
+
 }
