@@ -1,7 +1,7 @@
 
 .body {
   font-family: Arial, sans-serif;
-  
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -17,6 +17,11 @@
   padding-bottom: 5rem;
   width: 100%;
   box-sizing: border-box;
+  
+}
+
+.main.section{
+  margin-bottom: 80px;
 }
 
 .aboutMe {
@@ -33,7 +38,9 @@
   z-index: 10;
 }
 
-
+section{
+  margin-bottom: 50px;
+}
 
 .hero-basic,
 .hero-basic * {
@@ -75,7 +82,6 @@
   align-self: stretch;
   word-break: break-word;
 }
-
 svg {
   width: 48px;
   height: 48px;
@@ -87,9 +93,7 @@ svg {
   margin-bottom: 25px;
 }
 
-.about{
-  height: 100vh;
-}
+
 
 
 .aboutMe{
@@ -160,6 +164,26 @@ hr {
     height: 45px;
   }
 
+
+
+  .stack {
+    font-size: 18px; 
+    padding: 8px;
+    margin: 4px; 
+  }
+
+  .stack svg {
+    height: 30px; 
+    width: 45px; 
+  }
+
+  .techstack {
+    margin-bottom: 50px; 
+    padding: 0 15px; 
+  }
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -185,5 +209,78 @@ hr {
     height: 40px;
   }
   
+
+
+  .stack {
+    font-size: 16px; /* 모바일에서 글자 크기 더 줄임 */
+    padding: 6px; /* 모바일에서 패딩 더 줄임 */
+    margin: 3px; /* 모바일에서 마진 더 줄임 */
+  }
+
+  .stack svg {
+    height: 28px; /* 모바일에서 SVG 높이 더 줄임 */
+    width: 40px; /* 모바일에서 SVG 너비 더 줄임 */
+    margin-right: 3px; /* 모바일에서 SVG-텍스트 간격 조절 */
+  }
+
+  .techstack {
+    margin-bottom: 40px; 
+    padding: 0 10px; 
+  }
+
+
+
+
 }
 
+@media (max-width: 480px) {
+  .hero-basic {
+      padding: 1rem; 
+      min-height: 70vh; 
+  }
+   .text-content-title {
+       margin-bottom: 1rem; 
+   }
+  .text-content-title .title {
+      font-size: 2em; 
+  }
+   
+   .nexticon { 
+      width: 35px;
+      height: 35px;
+   }
+
+  
+  .stack {
+      font-size: 14px; 
+      padding: 5px; 
+      margin: 2px; 
+  }
+  .stack svg {
+      height: 24px; 
+      width: 35px;
+      margin-right: 2px; 
+  }
+ 
+  .techstack {
+    margin-bottom: 30px; 
+    padding: 0 5px; 
+  }
+
+   .face {
+      width: 100px; 
+      height: 100px;
+      margin-bottom: 10px; 
+   }
+  .me {
+     padding: 0 5px; 
+  }
+  .about {
+      min-height: 60vh; 
+      padding-bottom: 20px;
+  }
+  hr {
+      margin: 15px auto; 
+      width: 60%; 
+  }
+}

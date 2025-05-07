@@ -5,7 +5,7 @@ function MainContent({homeRef,aboutRef,projectRef}) {
     return (
         <main className="main-content"ref={homeRef}>
           
-      <section className="main section" >   
+      <section className="main" >   
       
 <div className="hero-basic">
   <div className="text-content-title">
@@ -126,15 +126,12 @@ function MainContent({homeRef,aboutRef,projectRef}) {
                 </svg>
           </section>
 
-
-
-
+            
 
             <section ref={projectRef}>
                 <h1>PROJECT</h1>
                 <div>
-                  <img></img>
-                  <h4></h4>
+
                 </div>
             </section>
         </main>
