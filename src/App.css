@@ -320,7 +320,7 @@ hr {
 @media (max-width: 480px) {
   .hero-basic {
       padding: 1rem; 
-      min-height: 70vh; 
+      min-height: 80vh; 
   }
    .text-content-title {
        margin-bottom: 1rem; 

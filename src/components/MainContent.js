@@ -40,7 +40,7 @@ function MainContent({homeRef,aboutRef,projectRef}) {
                 </div>
                 <h1>EDUCATION</h1>
                 2023.09 ~ 2024.03 SOLDESK(강남) k-digital training<br/>
-                2017.03 ~ 2023.02 극동대학교 반도체장비공학과 졸업 학점 3.85/4.5
+                2017.03 ~ 2023.02 극동대학교 반도체장비공학과 졸업 <br/>학점 3.85/4.5
                  <HorizonLine/>
                  <div>
                 <h1>TECHNOLOGY STACK</h1> <br/><br/>
