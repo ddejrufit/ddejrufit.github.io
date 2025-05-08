@@ -13,7 +13,7 @@ function Navigation({scrollToHome, scrollToAbout, scrollToProject}) {
       <div className='header'>
       <Navbar bg="light" data-bs-theme="light" >
       <Container>
-        <Navbar.Brand href="#home" >KCW</Navbar.Brand>
+        <Navbar.Brand  onClick={scrollToHome} >KCW</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link onClick={scrollToHome}>   Home</Nav.Link>
           <Nav.Link onClick={scrollToAbout}>   About</Nav.Link>
