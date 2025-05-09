@@ -1,5 +1,7 @@
 import './MainContent.css';
 import HorizonLine from './HorizonLine';
+import projectsData from '../data/projects'
+import ProjectList from './ProjectList';
 
 function MainContent({homeRef,aboutRef,projectRef}) {         
     return (
@@ -128,10 +130,11 @@ function MainContent({homeRef,aboutRef,projectRef}) {
 
             
 
-            <section ref={projectRef}>
+          <section ref={projectRef} className="project-section"> {/* 클래스 추가 */}
                 <h1>PROJECT</h1>
                 <div>
-
+                    {/* ProjectList 컴포넌트를 사용하고, 프로젝트 데이터를 전달합니다. */}
+                    <ProjectList projects={projectsData} />
                 </div>
             </section>
         </main>
