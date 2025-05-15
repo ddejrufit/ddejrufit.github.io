@@ -13,7 +13,7 @@ const projects = [
       id: 2,
       title: "쇼핑몰",
       description: "react를 이용한 쇼핑몰",
-      imageUrl: "https://i.ibb.co/프로젝트2_썸네일_이미지.png",
+      imageUrl: "https://i.ibb.co/qFyDD0ds/reactshop.png",
       techStacks: ["React","JavaScript","HTML","CSS"],
       githubUrl: "https://github.com/ddejrufit/reactshop",
       deployUrl: "https://ddejrufit.github.io/reactshop/",
