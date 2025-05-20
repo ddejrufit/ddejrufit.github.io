@@ -3,11 +3,11 @@ import HorizonLine from './HorizonLine';
 import projectsData from '../data/projects'
 import ProjectList from './ProjectList';
 
-function MainContent({homeRef,aboutRef,projectRef}) {         
+function MainContent({homeRef,aboutRef,projectRef,handleScrollToNextSection}) {         
     return (
-        <main className="main-content"ref={homeRef}>
-          
-      <section className="main" >   
+        <main className="main-content">
+ 
+      <section className="main" ref={homeRef} onClick={handleScrollToNextSection}>   
       
 <div className="hero-basic">
   <div className="text-content-title">
@@ -27,7 +27,7 @@ function MainContent({homeRef,aboutRef,projectRef}) {
 </svg>
 </section>   
 
-            <section className='about'ref={aboutRef}>
+            <section className='about'ref={aboutRef} onClick={handleScrollToNextSection}>
               <div className=''>
                 <h1>ABOUT</h1>
             <div className='aboutMe'>
